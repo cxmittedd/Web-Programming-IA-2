@@ -1,0 +1,76 @@
+body{
+  background-image: url(IMG_1441.JPG);
+  font-family: Arial, sans-serif;
+  
+  text-align: center;
+  padding: 20px;
+  height: 100%;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    scroll-behavior: smooth;
+}
+
+h1 {
+  color: #222;
+  margin-bottom: 20px;
+}
+
+.checkout-container {
+  background: white;
+  max-width: 500px;
+  margin: auto;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+
+form h2 {
+  margin-bottom: 20px;
+  color: #4caf50;
+}
+
+.form-group {
+  margin-bottom: 15px;
+  text-align: left;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 6px;
+  font-weight: bold;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 8px 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.form-row {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.form-group.small input {
+  width: 100%;
+}
+
+.pay-btn {
+  background: #4caf50;
+  color: white;
+  border: none;
+  padding: 12px 25px;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 15px;
+}
+
+.pay-btn:hover {
+  background: #45a049;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+}
+

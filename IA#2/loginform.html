@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login - Fresh Cuts</title>
+    <link rel="stylesheet" href="loginform.css" />
+    <link
+      href="https://cdn.boxicons.com/fonts/basic/boxicons.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body
+    style="
+      background-image: url(IMG_1441.JPG);
+      background-size: cover;
+      background-position: center center;
+      background-repeat: repeat;
+      height: 100%;
+      overflow: hidden;
+    "
+  >
+    <form id="loginForm">
+      <div class="box">
+        <h1>Login</h1>
+
+        <div class="inputbox">
+          <label></label>
+          <input
+            type="text"
+            id="username"
+            placeholder="username"
+            required
+            minlength="3"
+          />
+          <i class="bx bx-user"></i>
+        </div>
+
+        <div class="inputbox">
+          <label></label>
+          <input
+            type="text"
+            placeholder="password"
+            id="password"
+            minlength="8"
+          />
+          <i class="bx bx-lock"></i>
+        </div>
+
+        <div class="remember-forgot">
+          <label><input type="checkbox" />Remember me</label>
+
+          <a href="#">Forgot password?</a>
+        </div>
+
+        <button type="submit" class="loginbutton">Login</button>
+
+        <div class="register-link">
+          <p>
+            Don't have an account?
+            <a href="RegistrationForm.HTML" target="_blank"> Register</a>
+          </p>
+        </div>
+      </div>
+    </form>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        const form = document.getElementById("loginForm");
+
+        form.addEventListener("submit", (event) => {
+          event.preventDefault();
+
+          const username = document.getElementById("username").value.trim();
+          const password = document.getElementById("password").value;
+
+          const users = JSON.parse(localStorage.getItem("users")) || [];
+
+          const user = users.find(
+            (u) => u.username === username && u.password === password
+          );
+
+          if (user) {
+            localStorage.setItem("loggedInuser", username);
+            localStorage.setItem("isLoggedIn", "true");
+            alert("Loggin Successful");
+            window.location = "LandingPage.html";
+          } else {
+            alert("Invalid login credentials");
+          }
+        });
+      });
+      console.log("Users in localStorage:", users);
+      console.log("Entered username:", username);
+      console.log("Entered password:", password);
+    </script>
+  </body>
+</html>
