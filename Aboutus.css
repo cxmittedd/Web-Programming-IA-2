@@ -1,0 +1,56 @@
+.body,html{
+    background-image: url(IMG_1441.JPG);
+     position: relative;
+  
+    
+   
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+ 
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    scroll-behavior: smooth;
+   
+}
+
+.Aboutdesc{
+    text-align: center;
+}
+
+.Aboutdesc h1{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: greenyellow;
+    background: rgba(251, 248, 248, 0.05);
+    font-size: 4em;
+}
+.Aboutdesc p{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1.7em;
+    font-weight: bold;
+    color: white;
+    background: rgba(120, 114, 114, 0.5);
+}
+
+.Aboutdesc h2{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: greenyellow;
+    background: rgba(251, 248, 248, 0.01);
+    font-size: 2em;
+}
+
+.Aboutdesc p a{
+    color: greenyellow;
+    text-decoration: none;
+}
+
+.Aboutdesc p a:hover{
+    text-decoration: underline;
+}
+
+.Aboutdesc h4{
+    text-align: right;
+    color: white;
+}

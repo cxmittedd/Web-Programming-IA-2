@@ -1,0 +1,105 @@
+.body,html{
+     background-image: url(gardening-objects.jpg);
+   
+    
+ 
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    scroll-behavior: smooth;
+}
+.Packages{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
+   gap: 20px;
+    padding: 20px;
+    cursor: pointer;
+}
+
+.Packages .basic,
+.Packages .premium,
+.Packages .Exclusive {
+    background: white;
+    border-radius: 8px;
+   
+    overflow: hidden;
+    position: relative;
+    transition: transform 0.3s ease, Wbox-shadow .3s ease;
+}
+
+.Packages .basic{
+        box-shadow: 0 4px 8px black;
+
+}
+
+
+.Packages .premium{
+    box-shadow:0 2px 4px red;
+}
+
+.Packages .Exclusive{
+    box-shadow:0 4px 8px gold;
+}
+
+.Packages .basic:hover,
+.Packages .premium:hover,
+.Packages .Exclusive:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.Packages img{
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.Packages .basic:hover img,
+.Packages .premium:hover img,
+.Packages .Exclusive:hover img {
+  transform: scale(1.10);
+
+
+}
+
+.description{
+    cursor:default;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: center;
+    color: white;
+}
+
+.add-cart-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 24px;
+  margin-left: 8px;
+  padding: 4px;
+  border-radius: 6px;
+}
+
+.add-cart-btn i {
+  color: green; 
+  transition: transform .15s ease, color .15s ease;
+}
+
+.add-cart-btn:hover i {
+  transform: scale(1.2);
+}
+
+.add-cart-btn.added {
+  transform: scale(1.12);
+}
+.add-cart-btn:focus {
+  outline: 2px solid rgba(0,0,0,0.15);
+  outline-offset: 2px;
+}
+
+.homeicon i{
+margin-left: 49%;
+color: green;
+font-size: 1.5em;
+}

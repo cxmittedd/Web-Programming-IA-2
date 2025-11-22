@@ -1,0 +1,100 @@
+.body,html{
+    background-image: url(IMG_1441.JPG);
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+ 
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    scroll-behavior: smooth;
+    
+}
+
+.CompanyName { 
+   background: rgba(251, 248, 248, 0.1);
+
+    
+font-size: 3em;
+    position: relative;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.navitems{
+background-size: cover;
+display: flex;
+border-style:dashed;
+padding-right: 4%;
+justify-content: space-between;
+border-color: white;
+margin-left: -1%;
+margin-right: -1%;
+margin-top:-1%
+}
+
+.navitems:hover{
+    transition:opacity .7;
+    background: rgba(251, 248, 248, .4);
+    border-style: ridge;
+}
+
+.navitems button{
+    cursor: pointer;
+    height: 30px;
+    width: 100%;
+    border-radius: 50px;
+    margin: 15px 0;
+    transition:box-shadow .15s;
+}
+.navitems a{
+    color: white;
+      
+}
+.navitems button:hover{
+    font-style: italic;
+    text-decoration: underline;
+    border-style: dotted;
+    background-color: black;
+    color: greenyellow;
+    opacity: .8;
+}
+
+button{
+    color: green;
+}
+.cart{
+    background: green;
+}
+.cart-badge {
+  position: absolute;
+  top: -4px;
+  right: -4px;
+  height: 14px;
+  padding: 0 4px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 999px;
+  background: red;
+  color: white;
+  font-size: 10px; 
+
+}
+button.cart {
+  position: relative;
+  width: auto;
+}
+button i{
+    color:yellow;
+}
+
+button i:hover{
+    transition: 0.5s;
+    color: green;
+}

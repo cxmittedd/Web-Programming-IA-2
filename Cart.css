@@ -1,0 +1,71 @@
+body{
+  background-image: url(IMG_1443.JPG);
+  font-family: Arial, sans-serif;
+  text-align: center;
+  padding: 20px;
+}
+
+h1 {
+  color: #222;
+  margin-bottom: 20px;
+}
+
+.cart-container {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  width: 90%;
+  max-width: 900px;
+  margin: auto;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+
+th, td {
+  padding: 12px;
+  border-bottom: 1px solid #ccc;
+}
+
+th {
+  background: #4caf50;
+  color: white;
+}
+
+button {
+  background: red;
+  border: none;
+  color: white;
+  padding: 8px 12px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+#clearCartBtn {
+  background: #444;
+  color: white;
+  width: 200px;
+  font-size: 16px;
+}
+.checkout-btn {
+  background: #4caf50;
+  color: white;
+  border: none;
+  font-size: 16px;
+  margin-top: 15px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.checkout-btn:hover {
+  background: green;
+ 
+}
